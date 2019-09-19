@@ -1,0 +1,18 @@
+server:
+  port: 8881
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+spring:
+  application:
+    name: service-order
+  rabbitmq:
+      host: 47.105.98.39
+      port: 5672
+      username: admin
+      password: admin
+      #发送确认
+      publisher-confirms: true
+      publisher-returns: true
+
